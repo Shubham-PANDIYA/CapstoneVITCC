@@ -21,3 +21,5 @@ Design Dashboards for several flows so that user gets clear idea of the stats.
 Electricity Tariff prediction so that system is able to supply electricity in peak hours to gain profit.
 Designing smart algorithm to achieve near zero green building.
 
+#Block Diagram
+![image](https://user-images.githubusercontent.com/83089495/158244336-046d1cb2-682d-46f0-ab1e-f0c5a886784d.png)
