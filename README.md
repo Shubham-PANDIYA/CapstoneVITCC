@@ -6,4 +6,16 @@ Reduces Wastage of Energy.​
 Conserves Natural Resources.​
 Improves Air and Water Quality.​
 Reduces Costs and Increase Value.​
-![image](https://user-images.githubusercontent.com/83089495/158243819-28a5ff30-dbcc-4d27-babb-a1ebd3023ebe.png)
+AIM!
+To design a Smart Prediction, Monitoring and Control System for Intelligent near Zero Green Buildings.
+
+Major Objectives:
+Designing a RES generation and consumption system for Intelligent Green Building.
+Designing a cloud based Monitoring, Prediction & Control system.
+To help user get more profit from electricity exchange with help of ML.
+
+Minor Objectives:
+Design Dashboards for several flows so that user gets clear idea of the stats.
+Electricity Tariff prediction so that system is able to supply electricity in peak hours to gain profit.
+Designing smart algorithm to achieve near zero green building.
+
