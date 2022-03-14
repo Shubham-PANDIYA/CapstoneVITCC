@@ -6,7 +6,9 @@ Reduces Wastage of Energy.​
 Conserves Natural Resources.​
 Improves Air and Water Quality.​
 Reduces Costs and Increase Value.​
-AIM!
+
+Aim![image](https://user-images.githubusercontent.com/83089495/158244077-3abca2cf-6d1f-460d-87da-007c35bba88d.png)
+
 To design a Smart Prediction, Monitoring and Control System for Intelligent near Zero Green Buildings.
 
 Major Objectives:
