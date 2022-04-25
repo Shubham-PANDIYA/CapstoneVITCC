@@ -27,4 +27,5 @@ Experimental Considerations:![image](https://user-images.githubusercontent.com/8
 A 3 store building has been considered for this paper which have 5 flats and other amenities such as parking, control room and as usual corridors & staircase. All the appliances in each flat are considered as an average household have and same has been done for working hours of those appliances.
 Chennai is considered as the location of the building and according to that all the calculations has been done and assumptions has been taken.
 As the load ratings are high for a single phase AC, so 3-phase AC bus is considered for the building’s load.
-![image](https://user-images.githubusercontent.com/83089495/158244552-3430c4bc-2a1c-4ed4-a05e-d9cae0236932.png)
+![Node-red whole flow](https://user-images.githubusercontent.com/83089495/165082202-747bbfe7-8b0a-46ce-b1da-61430f2ed9cf.png)
+
