@@ -14727,9 +14727,9 @@
         "altitude": "550",
         "area": "1.83",
         "number": "113",
-        "efficiency": "13",
+        "efficiency": "14",
         "x": 3260,
-        "y": 140,
+        "y": 60,
         "wires": [
             [
                 "b7445abf191910f5"
@@ -14757,8 +14757,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 3070,
-        "y": 120,
+        "x": 3030,
+        "y": 60,
         "wires": [
             [
                 "3a77ba2fe40ce702"
@@ -14802,8 +14802,8 @@
         ],
         "outputs": 1,
         "useDifferentColor": false,
-        "x": 3810,
-        "y": 100,
+        "x": 3850,
+        "y": 20,
         "wires": [
             []
         ]
@@ -14831,7 +14831,7 @@
         "seg1": "50",
         "seg2": "100",
         "x": 4070,
-        "y": 240,
+        "y": 80,
         "wires": []
     },
     {
@@ -14845,8 +14845,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3510,
-        "y": 200,
+        "x": 3530,
+        "y": 60,
         "wires": [
             [
                 "5e7883c45cfbfd56",
@@ -14865,8 +14865,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3800,
-        "y": 240,
+        "x": 3820,
+        "y": 80,
         "wires": [
             [
                 "b0d13c4d49501dd8"
@@ -14893,8 +14893,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 3490,
-        "y": 440,
+        "x": 3430,
+        "y": 340,
         "wires": [
             [
                 "f936b50887e5e025"
@@ -14912,8 +14912,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3690,
-        "y": 440,
+        "x": 3670,
+        "y": 340,
         "wires": [
             [
                 "4163e2419cffc5fa"
@@ -14929,7 +14929,8 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
         "x": 4930,
@@ -14963,7 +14964,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 3,
-        "x": 4110,
+        "x": 3990,
         "y": 680,
         "wires": [
             [
@@ -15000,7 +15001,8 @@
         "wires": [
             [
                 "f5b6762a102cb977",
-                "0d1894fdb40f77a4"
+                "0d1894fdb40f77a4",
+                "6f0d12e5e8fe127e"
             ]
         ]
     },
@@ -15069,7 +15071,7 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 3650,
+        "x": 3630,
         "y": 560,
         "wires": [
             [
@@ -15106,7 +15108,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 3,
-        "x": 3830,
+        "x": 3790,
         "y": 560,
         "wires": [
             [
@@ -15147,7 +15149,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 3,
-        "x": 4100,
+        "x": 3980,
         "y": 560,
         "wires": [
             [
@@ -15188,7 +15190,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 3,
-        "x": 4100,
+        "x": 3980,
         "y": 440,
         "wires": [
             [
@@ -15214,8 +15216,9 @@
         "label": "Command:- ",
         "format": "{{msg.payload.ans}}",
         "layout": "row-left",
+        "className": "",
         "x": 4930,
-        "y": 580,
+        "y": 540,
         "wires": []
     },
     {
@@ -15223,18 +15226,19 @@
         "type": "function",
         "z": "47b8c8a7bbf87155",
         "name": "",
-        "func": "var ans = \"Charge Extra Battery\";\nmsg.payload = {ans};\nreturn msg;",
+        "func": "var ans = \"Supply to Building's Load\";\nmsg.payload = {ans};\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 4280,
+        "x": 4160,
         "y": 680,
         "wires": [
             [
                 "7eddae5186886672",
-                "ad89e5a6b87fd04f"
+                "ad89e5a6b87fd04f",
+                "9fc5ecd1d2aed1fa"
             ]
         ]
     },
@@ -15249,12 +15253,13 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 4280,
+        "x": 4160,
         "y": 640,
         "wires": [
             [
                 "7eddae5186886672",
-                "ad89e5a6b87fd04f"
+                "ad89e5a6b87fd04f",
+                "9fc5ecd1d2aed1fa"
             ]
         ]
     },
@@ -15269,12 +15274,13 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 4280,
+        "x": 4160,
         "y": 600,
         "wires": [
             [
                 "7eddae5186886672",
-                "ad89e5a6b87fd04f"
+                "ad89e5a6b87fd04f",
+                "9fc5ecd1d2aed1fa"
             ]
         ]
     },
@@ -15289,12 +15295,13 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 4280,
+        "x": 4160,
         "y": 560,
         "wires": [
             [
                 "7eddae5186886672",
-                "ad89e5a6b87fd04f"
+                "ad89e5a6b87fd04f",
+                "9fc5ecd1d2aed1fa"
             ]
         ]
     },
@@ -15309,12 +15316,13 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 4280,
+        "x": 4160,
         "y": 520,
         "wires": [
             [
                 "7eddae5186886672",
-                "ad89e5a6b87fd04f"
+                "ad89e5a6b87fd04f",
+                "9fc5ecd1d2aed1fa"
             ]
         ]
     },
@@ -15329,12 +15337,13 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 4280,
+        "x": 4160,
         "y": 480,
         "wires": [
             [
                 "7eddae5186886672",
-                "ad89e5a6b87fd04f"
+                "ad89e5a6b87fd04f",
+                "9fc5ecd1d2aed1fa"
             ]
         ]
     },
@@ -15349,12 +15358,13 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 4280,
+        "x": 4160,
         "y": 440,
         "wires": [
             [
                 "7eddae5186886672",
-                "ad89e5a6b87fd04f"
+                "ad89e5a6b87fd04f",
+                "9fc5ecd1d2aed1fa"
             ]
         ]
     },
@@ -15363,18 +15373,19 @@
         "type": "function",
         "z": "47b8c8a7bbf87155",
         "name": "",
-        "func": "var ans = \"Supply to building's Load\";\nmsg.payload = {ans};\nreturn msg;",
+        "func": "var ans = \"Supply to building's Load + Charge Fixed Battery\";\nmsg.payload = {ans};\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 4280,
+        "x": 4160,
         "y": 400,
         "wires": [
             [
                 "7eddae5186886672",
-                "ad89e5a6b87fd04f"
+                "ad89e5a6b87fd04f",
+                "9fc5ecd1d2aed1fa"
             ]
         ]
     },
@@ -15396,12 +15407,13 @@
         "min": 0,
         "max": "100",
         "step": "10",
-        "x": 3910,
+        "x": 3770,
         "y": 740,
         "wires": [
             [
                 "f280098e0ccc7067",
-                "498d42462d037753"
+                "498d42462d037753",
+                "7b7f8d304fdbda9b"
             ]
         ]
     },
@@ -15427,8 +15439,8 @@
         ],
         "seg1": "40",
         "seg2": "80",
-        "x": 4110,
-        "y": 800,
+        "x": 3970,
+        "y": 780,
         "wires": []
     },
     {
@@ -15442,7 +15454,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 4100,
+        "x": 3960,
         "y": 740,
         "wires": [
             [
@@ -15470,8 +15482,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 4270,
-        "y": 740,
+        "x": 4150,
+        "y": 720,
         "wires": [
             [
                 "4e40adb6b3c769f9"
@@ -15482,7 +15494,7 @@
         "id": "4e40adb6b3c769f9",
         "type": "switch",
         "z": "47b8c8a7bbf87155",
-        "name": "Full \\\\ Semi \\\\ 0",
+        "name": "Full \\\\ 0 \\\\ Semi",
         "property": "payload.ExBatPer",
         "propertyType": "msg",
         "rules": [
@@ -15492,32 +15504,32 @@
                 "vt": "num"
             },
             {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
                 "t": "btwn",
                 "v": "1",
                 "vt": "num",
                 "v2": "99",
                 "v2t": "num"
-            },
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "num"
             }
         ],
         "checkall": "true",
         "repair": false,
         "outputs": 3,
-        "x": 4440,
-        "y": 740,
+        "x": 4300,
+        "y": 720,
         "wires": [
             [
                 "d5727ee07ba34faa"
             ],
             [
-                "822d4b92094da9c6"
+                "004e1325bb97a46f"
             ],
             [
-                "004e1325bb97a46f"
+                "420bf76a4df4fa65"
             ]
         ]
     },
@@ -15532,35 +15544,15 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 4620,
-        "y": 780,
+        "x": 4480,
+        "y": 720,
         "wires": [
             [
                 "7eddae5186886672",
-                "ad89e5a6b87fd04f"
+                "ad89e5a6b87fd04f",
+                "9fc5ecd1d2aed1fa"
             ]
         ]
-    },
-    {
-        "id": "822d4b92094da9c6",
-        "type": "function",
-        "z": "47b8c8a7bbf87155",
-        "name": "ML\\\\Work",
-        "func": "var ans = \"Charging extra Battery + feeding Utility Grid in peak hours\";\nmsg.payload = {ans};\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 4620,
-        "y": 740,
-        "wires": [
-            [
-                "7eddae5186886672",
-                "ad89e5a6b87fd04f"
-            ]
-        ],
-        "icon": "font-awesome/fa-area-chart"
     },
     {
         "id": "d5727ee07ba34faa",
@@ -15573,12 +15565,13 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 4620,
-        "y": 700,
+        "x": 4480,
+        "y": 680,
         "wires": [
             [
                 "7eddae5186886672",
-                "ad89e5a6b87fd04f"
+                "ad89e5a6b87fd04f",
+                "9fc5ecd1d2aed1fa"
             ]
         ]
     },
@@ -15599,7 +15592,7 @@
         "nodata": "",
         "dot": false,
         "ymin": "0",
-        "ymax": "140",
+        "ymax": "140000",
         "removeOlder": 1,
         "removeOlderPoints": "",
         "removeOlderUnit": "86400",
@@ -15619,8 +15612,9 @@
         ],
         "outputs": 1,
         "useDifferentColor": false,
-        "x": 3510,
-        "y": 520,
+        "className": "",
+        "x": 3410,
+        "y": 420,
         "wires": [
             []
         ]
@@ -15635,50 +15629,22 @@
         "width": 0,
         "height": 0,
         "gtype": "gage",
-        "title": "Kw-hr",
+        "title": "W-hr",
         "label": "units",
         "format": "{{value}}",
         "min": 0,
-        "max": "140",
+        "max": "140000",
         "colors": [
             "#00b500",
             "#e6e600",
             "#ca3838"
         ],
-        "seg1": "",
-        "seg2": "",
-        "x": 3450,
-        "y": 480,
+        "seg1": "8000",
+        "seg2": "10000",
+        "className": "",
+        "x": 3410,
+        "y": 380,
         "wires": []
-    },
-    {
-        "id": "71cf24cf49dafb79",
-        "type": "ui_slider",
-        "z": "47b8c8a7bbf87155",
-        "name": "",
-        "label": "Load",
-        "tooltip": "",
-        "group": "807060a363c46cc8",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "outs": "all",
-        "topic": "topic",
-        "topicType": "msg",
-        "min": 0,
-        "max": "140",
-        "step": 1,
-        "x": 3290,
-        "y": 480,
-        "wires": [
-            [
-                "a70d928185acbd69",
-                "170e348bd2d40edc",
-                "5d6462bbbe042dd6",
-                "716a641c4f6a8867"
-            ]
-        ]
     },
     {
         "id": "c6aaa699bb8f7ff7",
@@ -15702,8 +15668,9 @@
         ],
         "seg1": "50",
         "seg2": "100",
-        "x": 3710,
-        "y": 380,
+        "className": "",
+        "x": 3470,
+        "y": 260,
         "wires": []
     },
     {
@@ -15716,11 +15683,567 @@
         "width": 0,
         "height": 0,
         "gtype": "gage",
-        "title": "LOAD in Kw-hr",
+        "title": "LOAD in W-hr",
         "label": "units",
         "format": "{{value}}",
         "min": 0,
-        "max": "140",
+        "max": "140000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "8000",
+        "seg2": "10000",
+        "className": "",
+        "x": 3440,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "0cf5cf8ce1bc0fe2",
+        "type": "ui_text_input",
+        "z": "47b8c8a7bbf87155",
+        "name": "",
+        "label": "Load",
+        "tooltip": "",
+        "group": "807060a363c46cc8",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 3150,
+        "y": 400,
+        "wires": [
+            [
+                "716a641c4f6a8867",
+                "5d6462bbbe042dd6",
+                "a70d928185acbd69",
+                "170e348bd2d40edc",
+                "9eabb79cb056e6ff",
+                "1b39afc0a0592611"
+            ]
+        ]
+    },
+    {
+        "id": "f78835d6a79b357f",
+        "type": "ui_text_input",
+        "z": "47b8c8a7bbf87155",
+        "name": "",
+        "label": "Power",
+        "tooltip": "",
+        "group": "807060a363c46cc8",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 3150,
+        "y": 240,
+        "wires": [
+            [
+                "5d6462bbbe042dd6",
+                "c6aaa699bb8f7ff7",
+                "a553a466c9771e78",
+                "69e25db9f4928904"
+            ]
+        ]
+    },
+    {
+        "id": "9fc5ecd1d2aed1fa",
+        "type": "ui_text",
+        "z": "47b8c8a7bbf87155",
+        "group": "4b198b5a980698de",
+        "order": 1,
+        "width": 8,
+        "height": 1,
+        "name": "",
+        "label": "Status:- ",
+        "format": "{{msg.payload.ans}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 4920,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "671627033d6a85cc",
+        "type": "ui_switch",
+        "z": "47b8c8a7bbf87155",
+        "name": "",
+        "label": "Peak Hour",
+        "tooltip": "",
+        "group": "217e004327a9f1f3",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 3810,
+        "y": 860,
+        "wires": [
+            [
+                "4fb447a86daee2bc"
+            ]
+        ],
+        "icon": "node-red/cog.svg"
+    },
+    {
+        "id": "4fb447a86daee2bc",
+        "type": "function",
+        "z": "47b8c8a7bbf87155",
+        "name": "to Object",
+        "func": "var peakHour = msg.payload;\nmsg.payload = {peakHour};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3980,
+        "y": 860,
+        "wires": [
+            [
+                "9fd80479b122e3e2"
+            ]
+        ]
+    },
+    {
+        "id": "29349c05d01caa66",
+        "type": "ui_toast",
+        "z": "47b8c8a7bbf87155",
+        "position": "dialog",
+        "displayTime": "5",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 4870,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "420bf76a4df4fa65",
+        "type": "switch",
+        "z": "47b8c8a7bbf87155",
+        "name": "true // false",
+        "property": "payload.peakHour",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 4490,
+        "y": 760,
+        "wires": [
+            [
+                "5b681b5fae561c87"
+            ],
+            [
+                "05f2791c9aeaa00e"
+            ]
+        ]
+    },
+    {
+        "id": "5b681b5fae561c87",
+        "type": "function",
+        "z": "47b8c8a7bbf87155",
+        "name": "",
+        "func": "var ans=\"It's peak Hour! Supplying to Utility Grid\";\nmsg.payload={ans};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 4640,
+        "y": 740,
+        "wires": [
+            [
+                "7eddae5186886672",
+                "ad89e5a6b87fd04f",
+                "9fc5ecd1d2aed1fa",
+                "39e472c6a374e168"
+            ]
+        ]
+    },
+    {
+        "id": "05f2791c9aeaa00e",
+        "type": "function",
+        "z": "47b8c8a7bbf87155",
+        "name": "",
+        "func": "var ans=\"It's not a peak Hour! Storing power\";\nmsg.payload = {ans};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 4640,
+        "y": 780,
+        "wires": [
+            [
+                "7eddae5186886672",
+                "ad89e5a6b87fd04f",
+                "9fc5ecd1d2aed1fa"
+            ]
+        ]
+    },
+    {
+        "id": "7b7f8d304fdbda9b",
+        "type": "ui_gauge",
+        "z": "47b8c8a7bbf87155",
+        "name": "Extra Battery",
+        "group": "8f3e98fe52c6e88c",
+        "order": 2,
+        "width": 5,
+        "height": 5,
+        "gtype": "donut",
+        "title": "Extra Battery %",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "40",
+        "seg2": "80",
+        "className": "",
+        "x": 3970,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "6f0d12e5e8fe127e",
+        "type": "ui_gauge",
+        "z": "47b8c8a7bbf87155",
+        "name": "",
+        "group": "8f3e98fe52c6e88c",
+        "order": 1,
+        "width": 5,
+        "height": 5,
+        "gtype": "donut",
+        "title": "Fixed Battery %",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "40",
+        "seg2": "80",
+        "className": "",
+        "x": 3480,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "69e25db9f4928904",
+        "type": "ui_gauge",
+        "z": "47b8c8a7bbf87155",
+        "name": "",
+        "group": "1347bc3294bf6e76",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Current Power Generated",
+        "label": "Watt",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "40000",
+        "colors": [
+            "#66d6ba",
+            "#e6e600",
+            "#ff7300"
+        ],
+        "seg1": "50",
+        "seg2": "100",
+        "className": "",
+        "x": 3470,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "9eabb79cb056e6ff",
+        "type": "ui_gauge",
+        "z": "47b8c8a7bbf87155",
+        "name": "",
+        "group": "d0da25504b442f03",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "LOAD in W-hr",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "140000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "8000",
+        "seg2": "10000",
+        "className": "",
+        "x": 3440,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "1b39afc0a0592611",
+        "type": "ui_chart",
+        "z": "47b8c8a7bbf87155",
+        "name": "",
+        "group": "d0da25504b442f03",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "140000",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 3410,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a553a466c9771e78",
+        "type": "ui_chart",
+        "z": "47b8c8a7bbf87155",
+        "name": "",
+        "group": "1347bc3294bf6e76",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Power Generation(Last 24 hrs)",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "Processing...",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "40000 W",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ff2600",
+            "#aec7e8",
+            "#ff7c0a",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 3490,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9be71aecbc7fdb1e",
+        "type": "openweathermap in",
+        "z": "47b8c8a7bbf87155",
+        "name": "Chennai",
+        "wtype": "current",
+        "lon": "",
+        "lat": "",
+        "city": "Chennai",
+        "country": "India",
+        "language": "en",
+        "x": 3800,
+        "y": 1080,
+        "wires": [
+            [
+                "bdb6c72617b588fe",
+                "c78eaa64a7cebdee",
+                "81c07c0b6cb47351",
+                "8f4a2898376939cd",
+                "245edfa8ece8ed5f",
+                "9e7c194a711c042e",
+                "8a12fe5760ab88ad"
+            ]
+        ]
+    },
+    {
+        "id": "bdb6c72617b588fe",
+        "type": "function",
+        "z": "47b8c8a7bbf87155",
+        "name": "Windspeed",
+        "func": "msg.payload = msg.payload.windspeed;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 4110,
+        "y": 920,
+        "wires": [
+            [
+                "e18a72f72b04b832"
+            ]
+        ]
+    },
+    {
+        "id": "c78eaa64a7cebdee",
+        "type": "function",
+        "z": "47b8c8a7bbf87155",
+        "name": "WindDirection",
+        "func": "msg.payload = msg.payload.winddirection;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 4120,
+        "y": 980,
+        "wires": [
+            [
+                "46d3ac0aa4975031"
+            ]
+        ]
+    },
+    {
+        "id": "e18a72f72b04b832",
+        "type": "ui_gauge",
+        "z": "47b8c8a7bbf87155",
+        "name": "",
+        "group": "12a7fc5b57353b89",
+        "order": 2,
+        "width": 4,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Wind Speed",
+        "label": "meters/sec",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "30",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "10",
+        "seg2": "20",
+        "className": "",
+        "x": 4290,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "81c07c0b6cb47351",
+        "type": "function",
+        "z": "47b8c8a7bbf87155",
+        "name": "Humidity",
+        "func": "msg.payload = msg.payload.humidity;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 4100,
+        "y": 1040,
+        "wires": [
+            [
+                "72e6286256471b4a"
+            ]
+        ]
+    },
+    {
+        "id": "72e6286256471b4a",
+        "type": "ui_gauge",
+        "z": "47b8c8a7bbf87155",
+        "name": "",
+        "group": "12a7fc5b57353b89",
+        "order": 4,
+        "width": 4,
+        "height": 3,
+        "gtype": "wave",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
         "colors": [
             "#00b500",
             "#e6e600",
@@ -15728,36 +16251,220 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 3360,
-        "y": 400,
+        "className": "",
+        "x": 4280,
+        "y": 1040,
         "wires": []
     },
     {
-        "id": "24bb1784b415e1d6",
-        "type": "ui_slider",
+        "id": "46d3ac0aa4975031",
+        "type": "ui_gauge",
         "z": "47b8c8a7bbf87155",
         "name": "",
-        "label": "power",
-        "tooltip": "",
-        "group": "bc2698f67a150630",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "outs": "all",
-        "topic": "topic",
-        "topicType": "msg",
+        "group": "12a7fc5b57353b89",
+        "order": 3,
+        "width": 4,
+        "height": 3,
+        "gtype": "compass",
+        "title": "Wind Direction",
+        "label": "degrees",
+        "format": "{{value}}",
         "min": 0,
-        "max": "40000",
-        "step": 1,
-        "x": 2990,
-        "y": 320,
+        "max": "360",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 4340,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "8f4a2898376939cd",
+        "type": "function",
+        "z": "47b8c8a7bbf87155",
+        "name": "Temperature",
+        "func": "msg.payload = msg.payload.tempc;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 4110,
+        "y": 1100,
         "wires": [
             [
-                "c6aaa699bb8f7ff7",
-                "5d6462bbbe042dd6"
+                "893819d998958f35"
             ]
         ]
+    },
+    {
+        "id": "893819d998958f35",
+        "type": "ui_text",
+        "z": "47b8c8a7bbf87155",
+        "group": "12a7fc5b57353b89",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Current Temp.",
+        "format": "{{msg.payload}} degree C",
+        "layout": "row-spread",
+        "className": "",
+        "x": 4300,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "245edfa8ece8ed5f",
+        "type": "function",
+        "z": "47b8c8a7bbf87155",
+        "name": "Temperature max",
+        "func": "msg.payload = msg.payload.temp_maxc;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 4130,
+        "y": 1160,
+        "wires": [
+            [
+                "d715583ad944963c"
+            ]
+        ]
+    },
+    {
+        "id": "d715583ad944963c",
+        "type": "ui_text",
+        "z": "47b8c8a7bbf87155",
+        "group": "12a7fc5b57353b89",
+        "order": 5,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "Temp_max:- ",
+        "format": "{{msg.payload}} deg_C",
+        "layout": "row-center",
+        "className": "",
+        "x": 4350,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "9e7c194a711c042e",
+        "type": "function",
+        "z": "47b8c8a7bbf87155",
+        "name": "Temperature min",
+        "func": "msg.payload = msg.payload.temp_minc;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 4130,
+        "y": 1220,
+        "wires": [
+            [
+                "5d8871dea361f983"
+            ]
+        ]
+    },
+    {
+        "id": "5d8871dea361f983",
+        "type": "ui_text",
+        "z": "47b8c8a7bbf87155",
+        "group": "12a7fc5b57353b89",
+        "order": 6,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "Temp min:- ",
+        "format": "{{msg.payload}} deg_C",
+        "layout": "row-center",
+        "className": "",
+        "x": 4350,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "8a12fe5760ab88ad",
+        "type": "function",
+        "z": "47b8c8a7bbf87155",
+        "name": "Weather",
+        "func": "msg.payload = msg.payload.weather;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 4100,
+        "y": 1280,
+        "wires": [
+            [
+                "6590d97ad061b4f4"
+            ]
+        ]
+    },
+    {
+        "id": "6590d97ad061b4f4",
+        "type": "ui_text",
+        "z": "47b8c8a7bbf87155",
+        "group": "12a7fc5b57353b89",
+        "order": 7,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "Weather:- ",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 4340,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "39e472c6a374e168",
+        "type": "function",
+        "z": "47b8c8a7bbf87155",
+        "name": "",
+        "func": "var answ=msg.payload.ans;\nmsg.payload=answ;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 4860,
+        "y": 740,
+        "wires": [
+            [
+                "29349c05d01caa66"
+            ]
+        ]
+    },
+    {
+        "id": "6649f78a5398e8cd",
+        "type": "ui_spacer",
+        "z": "47b8c8a7bbf87155",
+        "name": "spacer",
+        "group": "10c90ad2452276d7",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "09f3299fc1fc9612",
+        "type": "ui_spacer",
+        "z": "47b8c8a7bbf87155",
+        "name": "spacer",
+        "group": "10c90ad2452276d7",
+        "order": 5,
+        "width": 1,
+        "height": 1
     },
     {
         "id": "148368eaf50d81ab",
@@ -16065,7 +16772,7 @@
     {
         "id": "807060a363c46cc8",
         "type": "ui_group",
-        "name": "Wind Details",
+        "name": "Load Details",
         "tab": "fa9fb59277093caa",
         "order": 2,
         "disp": true,
@@ -16095,20 +16802,77 @@
         "collapse": false
     },
     {
-        "id": "bc2698f67a150630",
+        "id": "4b198b5a980698de",
         "type": "ui_group",
-        "name": "Home",
-        "tab": "6fc0cf5a89cc0e1b",
-        "order": 1,
+        "name": "System Details",
+        "tab": "1a4e8dcbc0d2171b",
+        "order": 4,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "217e004327a9f1f3",
+        "type": "ui_group",
+        "name": "Peak Hours Details",
+        "tab": "e7922604c3560b8b",
+        "order": 5,
         "disp": true,
         "width": "6",
-        "collapse": false
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8f3e98fe52c6e88c",
+        "type": "ui_group",
+        "name": "Battery Details",
+        "tab": "1a4e8dcbc0d2171b",
+        "order": 1,
+        "disp": true,
+        "width": 5,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1347bc3294bf6e76",
+        "type": "ui_group",
+        "name": "Generation Details",
+        "tab": "1a4e8dcbc0d2171b",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d0da25504b442f03",
+        "type": "ui_group",
+        "name": "Load details",
+        "tab": "1a4e8dcbc0d2171b",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "12a7fc5b57353b89",
+        "type": "ui_group",
+        "name": "Weather Details",
+        "tab": "1a4e8dcbc0d2171b",
+        "order": 5,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "e8b447fdd8470fdd",
         "type": "ui_tab",
         "name": "FLAT1",
         "icon": "dashboard",
+        "order": 14,
         "disabled": false,
         "hidden": false
     },
@@ -16117,6 +16881,7 @@
         "type": "ui_tab",
         "name": "FLAT2",
         "icon": "dashboard",
+        "order": 15,
         "disabled": false,
         "hidden": false
     },
@@ -16125,6 +16890,7 @@
         "type": "ui_tab",
         "name": "FLAT3",
         "icon": "dashboard",
+        "order": 16,
         "disabled": false,
         "hidden": false
     },
@@ -16133,6 +16899,7 @@
         "type": "ui_tab",
         "name": "FLAT4",
         "icon": "dashboard",
+        "order": 17,
         "disabled": false,
         "hidden": false
     },
@@ -16141,6 +16908,7 @@
         "type": "ui_tab",
         "name": "FLAT5",
         "icon": "dashboard",
+        "order": 18,
         "disabled": false,
         "hidden": false
     },
@@ -16149,6 +16917,7 @@
         "type": "ui_tab",
         "name": "OTHER LOADS",
         "icon": "dashboard",
+        "order": 19,
         "disabled": false,
         "hidden": false
     },
@@ -16157,7 +16926,7 @@
         "type": "ui_tab",
         "name": "Generation Side",
         "icon": "dashboard",
-        "order": 1,
+        "order": 12,
         "disabled": false,
         "hidden": false
     },
@@ -16166,14 +16935,14 @@
         "type": "ui_tab",
         "name": "Battery",
         "icon": "dashboard",
-        "order": 3,
+        "order": 13,
         "disabled": false,
         "hidden": false
     },
     {
-        "id": "6fc0cf5a89cc0e1b",
+        "id": "1a4e8dcbc0d2171b",
         "type": "ui_tab",
-        "name": "Light intensity",
+        "name": "Monitoring Dashboard",
         "icon": "dashboard",
         "disabled": false,
         "hidden": false
